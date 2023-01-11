@@ -19,6 +19,15 @@ const Dashboard = () => {
   const theme = useTheme();
   const colors = tokens(theme.palette.mode);
 
+  // // alert code
+  // var isNotified = false;
+  // var bullyStatus =
+  //   webSocketString === "bully_detected" ? "Bully Detected!" : "Neutral";
+
+  // if (bullyStatus === "Bully Detected!" && !isNotified) {
+  //   alert("Bully Detected in CCTV! \n Please Respond Immediately!");
+  // }
+
   return (
     <Box m="20px">
       {/* HEADER */}
@@ -153,7 +162,7 @@ const Dashboard = () => {
                 color={colors.greenAccent[500]}
               >
                 {/* Put the status (bully or neutral) according to websocket here */}
-                STATUS:
+                {/* STATUS: {bullyStatus} */}
               </Typography>
             </Box>
             <Box>
