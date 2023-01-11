@@ -10,8 +10,8 @@ import Header from "../../components/Header";
 import LineChart from "../../components/LineChart";
 import GeographyChart from "../../components/GeographyChart";
 import BarChart from "../../components/BarChart";
-// import StatBox from "../../components/StatBox";
-// import ProgressCircle from "../../components/ProgressCircle";
+import StatBox from "../../components/StatBox";
+import ProgressCircle from "../../components/ProgressCircle";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -40,14 +40,14 @@ const Dashboard = () => {
       </Box>
 
       {/* GRID & CHARTS */}
-      {/* <Box
+      <Box
         display="grid"
         gridTemplateColumns="repeat(12, 1fr)"
         gridAutoRows="140px"
         gap="20px"
-      > */}
+      >
         {/* ROW 1 */}
-        {/* <Box
+        <Box
           gridColumn="span 3"
           backgroundColor={colors.primary[400]}
           display="flex"
@@ -122,10 +122,10 @@ const Dashboard = () => {
               />
             }
           />
-        </Box> */}
+        </Box>
 
         {/* ROW 2 */}
-        {/* <Box
+        <Box
           gridColumn="span 8"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -214,10 +214,10 @@ const Dashboard = () => {
               </Box>
             </Box>
           ))}
-        </Box> */}
+        </Box>
 
         {/* ROW 3 */}
-        {/* <Box
+        <Box
           gridColumn="span 4"
           gridRow="span 2"
           backgroundColor={colors.primary[400]}
@@ -276,7 +276,7 @@ const Dashboard = () => {
             <GeographyChart isDashboard={true} />
           </Box>
         </Box>
-      </Box> */}
+      </Box>
     </Box>
   );
 };
