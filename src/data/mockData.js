@@ -427,163 +427,163 @@ export const mockPieData = [
 
 export const mockLineData = [
   {
-    id: "japan",
+    id: "2020",
     color: tokens("dark").greenAccent[500],
     data: [
       {
-        x: "plane",
+        x: "jan",
         y: 101,
       },
       {
-        x: "helicopter",
+        x: "feb",
         y: 75,
       },
       {
-        x: "boat",
+        x: "mar",
         y: 36,
       },
       {
-        x: "train",
+        x: "apr",
         y: 216,
       },
       {
-        x: "subway",
+        x: "may",
         y: 35,
       },
       {
-        x: "bus",
+        x: "jun",
         y: 236,
       },
       {
-        x: "car",
+        x: "jul",
         y: 88,
       },
       {
-        x: "moto",
+        x: "aug",
         y: 232,
       },
       {
-        x: "bicycle",
+        x: "sep",
         y: 281,
       },
       {
-        x: "horse",
+        x: "oct",
         y: 1,
       },
       {
-        x: "skateboard",
+        x: "nov",
         y: 35,
       },
       {
-        x: "others",
+        x: "dec",
         y: 14,
       },
     ],
   },
   {
-    id: "france",
+    id: "2021",
     color: tokens("dark").blueAccent[300],
     data: [
       {
-        x: "plane",
+        x: "jan",
         y: 212,
       },
       {
-        x: "helicopter",
+        x: "feb",
         y: 190,
       },
       {
-        x: "boat",
+        x: "mar",
         y: 270,
       },
       {
-        x: "train",
+        x: "apr",
         y: 9,
       },
       {
-        x: "subway",
+        x: "may",
         y: 75,
       },
       {
-        x: "bus",
+        x: "jun",
         y: 175,
       },
       {
-        x: "car",
+        x: "jul",
         y: 33,
       },
       {
-        x: "moto",
+        x: "aug",
         y: 189,
       },
       {
-        x: "bicycle",
+        x: "sep",
         y: 97,
       },
       {
-        x: "horse",
+        x: "oct",
         y: 87,
       },
       {
-        x: "skateboard",
+        x: "nov",
         y: 299,
       },
       {
-        x: "others",
+        x: "dec",
         y: 251,
       },
     ],
   },
   {
-    id: "us",
+    id: "2022",
     color: tokens("dark").redAccent[200],
     data: [
       {
-        x: "plane",
+        x: "jan",
         y: 191,
       },
       {
-        x: "helicopter",
+        x: "feb",
         y: 136,
       },
       {
-        x: "boat",
+        x: "mar",
         y: 91,
       },
       {
-        x: "train",
+        x: "apr",
         y: 190,
       },
       {
-        x: "subway",
+        x: "may",
         y: 211,
       },
       {
-        x: "bus",
+        x: "jun",
         y: 152,
       },
       {
-        x: "car",
+        x: "jul",
         y: 189,
       },
       {
-        x: "moto",
+        x: "aug",
         y: 152,
       },
       {
-        x: "bicycle",
+        x: "sep",
         y: 8,
       },
       {
-        x: "horse",
+        x: "oct",
         y: 197,
       },
       {
-        x: "skateboard",
+        x: "nov",
         y: 107,
       },
       {
-        x: "others",
+        x: "dec",
         y: 170,
       },
     ],
