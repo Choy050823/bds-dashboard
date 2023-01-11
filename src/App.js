@@ -17,21 +17,21 @@ import Line from "./scenes/line";
 
 function App() {
   const [theme, colorMode] = useMode();
-  // let isNotified = false;
+  let isNotified = false;
 
-  // // if receive the string bully_detected and !isNotified, then show popup box
-  // if (!isNotified) {
-  //   // show the pop up notification
-  //   $(".popup_box").css({
-  //     opacity: "1",
-  //     "pointer-events": "auto",
-  //   });
+  // if receive the string bully_detected and !isNotified, then show popup box
+  if (!isNotified) {
+    // show the pop up notification
+    // $(".popup_box").css({
+    //   opacity: "1",
+    //   "pointer-events": "auto",
+    // });
 
-  //   // Using this boolean variable to prevent pop up notification from prompting continuously
-  //   isNotified = true;
-  // } else {
-  //   isNotified = false;
-  // }
+    // Using this boolean variable to prevent pop up notification from prompting continuously
+    isNotified = true;
+  } else {
+    isNotified = false;
+  }
   return (
     <ColorModeContext.Provider value={colorMode}>
       <ThemeProvider theme={theme}>

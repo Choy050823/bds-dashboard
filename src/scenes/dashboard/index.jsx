@@ -152,7 +152,8 @@ const Dashboard = () => {
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               >
-                LIVE
+                {/* Put the status (bully or neutral) according to websocket here */}
+                STATUS:
               </Typography>
             </Box>
             <Box>
@@ -164,6 +165,7 @@ const Dashboard = () => {
             </Box>
           </Box>
           {/* Put the camera stream here */}
+          {/* <img src="[server url]/live"></img> */}
         </Box>
         <Box
           gridColumn="span 4"
