@@ -43,6 +43,7 @@ const Sidebar = () => {
 
   return (
     <Box
+      height="1440px"
       sx={{
         "& .pro-sidebar-inner": {
           background: `${colors.primary[400]} !important`,
@@ -96,7 +97,7 @@ const Sidebar = () => {
                   alt="profile-user"
                   width="100px"
                   height="100px"
-                  src={`../../assets/user.png`}
+                  src={`../../assets/tech-pic.gif`}
                   style={{ cursor: "pointer", borderRadius: "50%" }}
                 />
               </Box>
