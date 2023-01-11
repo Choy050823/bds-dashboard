@@ -16,12 +16,12 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            An important question
+            How to see all team memeber os the Bully Detection System?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Here is some details of the important question
+            Please go to the 'Manage Team' Page to see all members of the Bully Detection System
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -29,12 +29,12 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Another important question
+            How do I register a new bully in the webpage?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Here is some details of the important question
+            Please go to the 'Bully Profile Form' to register a new bully for future records
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -42,12 +42,12 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Your fav question
+            How to see the number of bullies differentiated in forms in the dashboard?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Here is some details of the important question
+            Please go to the 'Number of Bullies' page to see the bullies' forms in school
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -55,12 +55,12 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Some question
+            How do I know which form is getting bullied the most in school?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Here is some details of the important question
+            Please go to the 'Bully Case Distribution' Page to see more info about the proportion of bully cases in school
           </Typography>
         </AccordionDetails>
       </Accordion>
@@ -68,12 +68,12 @@ const FAQ = () => {
       <Accordion defaultExpanded>
         <AccordionSummary expandIcon={<ExpandMoreIcon />}>
           <Typography color={colors.greenAccent[500]} variant="h5">
-            Most asked question
+            How do I see the number of bully records in school this year?
           </Typography>
         </AccordionSummary>
         <AccordionDetails>
           <Typography>
-            Here is some details of the important question
+            Please go to the 'Bully Cases (Month)' Page to see the statistics of bully cases in school
           </Typography>
         </AccordionDetails>
       </Accordion>

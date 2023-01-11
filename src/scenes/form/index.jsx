@@ -35,7 +35,10 @@ const Form = () => {
   };
   return (
     <Box m="20px">
-      <Header title="CREATE USER" subtitle="Create a New User Profile" />
+      <Header
+        title="CREATE BULLY PROFILE"
+        subtitle="Create a New Bully Profile"
+      />
       <Formik
         onSubmit={handleFormSubmit}
         initialValues={initialValues}
@@ -118,7 +121,8 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="Address 1"
+                // label="Address 1"
+                label="Address"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.address1}
@@ -132,7 +136,8 @@ const Form = () => {
                 fullWidth
                 variant="filled"
                 type="text"
-                label="Address 2"
+                // label="Address 2"
+                label="Number of Bully Cases Involved"
                 onBlur={handleBlur}
                 onChange={handleChange}
                 value={values.address2}

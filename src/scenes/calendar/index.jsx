@@ -22,7 +22,7 @@ const Calendar = () => {
   const [currentEvents, setCurrentEvents] = useState([]);
 
   const handleDateClick = (selected) => {
-    const title = prompt("Please enter a new title for your event");
+    const title = prompt("Please enter a new title for new bully case");
     const calendarApi = selected.view.calendar;
     calendarApi.unselect();
 
@@ -41,7 +41,7 @@ const Calendar = () => {
   const handleEventClick = (selected) => {
     if (
       window.confirm(
-        `Are you sure you want to delete the event '${selected.event.title}'`
+        `Are you sure you want to delete the record '${selected.event.title}' ?`
       )
     ) {
       selected.event.remove();
@@ -50,7 +50,7 @@ const Calendar = () => {
 
   return (
     <Box m="20px">
-      <Header title="CALENDAR" subtitle="Full Calendar Interavtive Page" />
+      <Header title="BULLY CASE RECORDS" subtitle="Please Record Any New Bully Cases Here" />
       <Box display="flex" justifyContent="space-between">
         {/* CALENDAR SIDEBAR */}
         <Box
@@ -110,8 +110,8 @@ const Calendar = () => {
             eventClick={handleEventClick}
             eventsSet={(events) => setCurrentEvents(events)}
             initialEvents={[
-              { id: "1234", title: "All-day event", date: "2022-09-14" },
-              { id: "4321", title: "Timed event", date: "2022-09-28" },
+              { id: "1234", title: "Bully Case: Toilet", date: "2023-01-14" },
+              { id: "4321", title: "Bully Case: Classroom J404", date: "2023-01-17" },
             ]}
           />
         </Box>
