@@ -31,7 +31,7 @@ const Dashboard = () => {
    * Websocket code :)
    */
   let ws = new WebSocket("ws://localhost:4896");
-
+  let bullyStatus = "Normal"
   ws.onopen = function (e) {
     console.log("opened");
   };
@@ -40,6 +40,8 @@ const Dashboard = () => {
     if (e.data === "bully_detected") {
       ws.send("receive_ok");
       console.log("[SERVER] BULLY DETECTED");
+      bullyStatus = "BULLY DETECTED"
+      console.log(bullyStatus)
     }
   };
   ws.onclose = function (e) {
