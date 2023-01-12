@@ -39,6 +39,7 @@ const Dashboard = () => {
     console.log(e.data);
     if (e.data == "bully_detected") {
       bullyStatus = "Bullying";
+      alert("Bully Detected in CCTV! \n Please Respond Immediately!");
     }
   });
 
@@ -176,7 +177,7 @@ const Dashboard = () => {
                 color={colors.greenAccent[500]}
               >
                 {/* Put the status (bully or neutral) according to websocket here */}
-                {"STATUS: " + { bullyStatus }}
+                "STATUS: " {bullyStatus}
               </Typography>
             </Box>
             <Box>
@@ -188,7 +189,17 @@ const Dashboard = () => {
             </Box>
           </Box>
           {/* Put the camera stream here */}
-          {<iframe width="560" height="315" src="https://www.youtube-nocookie.com/embed/QRQksghhAHE" title="Camera Live Stream" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>}
+          <Box p="30px">
+            <iframe
+              width="100%"
+              height="480"
+              src="https://www.youtube-nocookie.com/embed/QRQksghhAHE"
+              title="Camera Live Stream"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen
+            ></iframe>
+          </Box>
         </Box>
         <Box
           gridColumn="span 4"
