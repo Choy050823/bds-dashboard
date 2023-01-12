@@ -14,6 +14,7 @@ import BarChart from "../../components/BarChart";
 import StatBox from "../../components/StatBox";
 import ProgressCircle from "../../components/ProgressCircle";
 import PieChart from "../../components/PieChart";
+import BullyMessage from "../../components/BullyMessage";
 
 const Dashboard = () => {
   const theme = useTheme();
@@ -30,23 +31,24 @@ const Dashboard = () => {
   /**
    * Websocket code :)
    */
-  let ws = new WebSocket("ws://localhost:4896");
-  let bullyStatus = "Normal"
-  ws.onopen = function (e) {
-    console.log("opened");
-  };
-  ws.onmessage = function (e) {
-    console.log(e.data);
-    if (e.data === "bully_detected") {
-      ws.send("receive_ok");
-      console.log("[SERVER] BULLY DETECTED");
-      bullyStatus = "BULLY DETECTED"
-      console.log(bullyStatus)
-    }
-  };
-  ws.onclose = function (e) {
-    console.log("close")
-  };
+  // let ws = new WebSocket("ws://localhost:4896");
+  // let bullyStatus = "Normal";
+  // ws.onopen = function (e) {
+  //   console.log("opened");
+  // };
+  // ws.onmessage = function (e) {
+  //   console.log(e.data);
+  //   if (e.data === "bully_detected") {
+  //     ws.send("receive_ok");
+  //     console.log("[SERVER] BULLY DETECTED");
+  //     // bullyStatus = "BULLY DETECTED";
+  //     // console.log(bullyStatus);
+  //     Bike.changeBikeColor
+  //   }
+  // };
+  // ws.onclose = function (e) {
+  //   console.log("close");
+  // };
 
   return (
     <Box m="20px">
@@ -176,14 +178,7 @@ const Dashboard = () => {
               >
                 Camera Stream
               </Typography>
-              <Typography
-                variant="h3"
-                fontWeight="bold"
-                color={colors.greenAccent[500]}
-              >
-                {/* Put the status (bully or neutral) according to websocket here */}
-                "STATUS: " {bullyStatus}
-              </Typography>
+              <BullyMessage />
             </Box>
             <Box>
               <IconButton>
