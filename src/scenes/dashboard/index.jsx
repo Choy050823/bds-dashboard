@@ -30,18 +30,21 @@ const Dashboard = () => {
   /**
    * Websocket code :)
    */
-  const socket = new WebSocket("ws://localhost:4896");
-  let bullyStatus = "Normal";
-  socket.addEventListener("open", function (e) {
-    socket.send("Initializing");
-  });
-  socket.addEventListener("message", function (e) {
+  let ws = new WebSocket("ws://localhost:4896");
+
+  ws.onopen = function (e) {
+    console.log("opened");
+  };
+  ws.onmessage = function (e) {
     console.log(e.data);
-    if (e.data == "bully_detected") {
-      bullyStatus = "Bullying";
-      alert("Bully Detected in CCTV! \n Please Respond Immediately!");
+    if (e.data === "bully_detected") {
+      ws.send("receive_ok");
+      console.log("[SERVER] BULLY DETECTED");
     }
-  });
+  };
+  ws.onclose = function (e) {
+    console.log("close")
+  };
 
   return (
     <Box m="20px">
