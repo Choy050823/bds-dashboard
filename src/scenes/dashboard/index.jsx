@@ -179,6 +179,14 @@ const Dashboard = () => {
                 Camera Stream
               </Typography>
               <BullyMessage />
+               {/* <Typography
+                variant="h3"
+                fontWeight="bold"
+                color={colors.greenAccent[500]}
+              > */}
+                {/* Put the status (bully or neutral) according to websocket here */}
+                {/* STATUS: Bully Status
+              </Typography>  */}
             </Box>
             <Box>
               <IconButton>

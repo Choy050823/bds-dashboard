@@ -1,7 +1,11 @@
-import { Typography } from "@mui/material";
+import { Typography, useTheme } from "@mui/material";
 import { useState } from "react";
+import { tokens } from "../theme.js";
 
 const BullyMessage = () => {
+    const theme = useTheme();
+    const colors = tokens(theme.palette.mode);
+
     const [bullyMsg, SetBullyMsg] = useState("Normal");
     let ws = new WebSocket("ws://localhost:4896");
     var isNotified = false;
