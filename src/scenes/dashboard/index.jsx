@@ -179,13 +179,13 @@ const Dashboard = () => {
                 Camera Stream
               </Typography>
               <BullyMessage />
-               {/* <Typography
+              {/* <Typography
                 variant="h3"
                 fontWeight="bold"
                 color={colors.greenAccent[500]}
               > */}
-                {/* Put the status (bully or neutral) according to websocket here */}
-                {/* STATUS: Bully Status
+              {/* Put the status (bully or neutral) according to websocket here */}
+              {/* STATUS: Bully Status
               </Typography>  */}
             </Box>
             <Box>
@@ -201,7 +201,7 @@ const Dashboard = () => {
             <iframe
               width="100%"
               height="480"
-              src="https://www.youtube-nocookie.com/embed/QRQksghhAHE"
+              src="https://www.youtube-nocookie.com/embed/hn6P0UGZTAQ"
               title="Camera Live Stream"
               frameborder="0"
               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
